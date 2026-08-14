@@ -16,16 +16,6 @@ BusOne is a Flask + SQLite + HTML/CSS/JavaScript bus-management demo with:
 
 ## Run without editing code
 
-### 1. Start backend
-Double-click `run_backend.bat`.
-
-Backend: `http://127.0.0.1:5000`
-
-### 2. Start frontend
-Double-click `run_frontend.bat`.
-
-Frontend: `http://127.0.0.1:5500/index.html`
-
 Use the frontend through localhost, not by opening the HTML file directly. This is especially important for the passenger camera QR scanner.
 
 ## Demo accounts already included
