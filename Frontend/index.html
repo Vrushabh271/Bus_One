@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BusOne - Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-container">
+
+            <!-- LEFT SIDE -->
+            <div class="login-left">
+
+                <div class="overlay"></div>
+
+                <div class="left-content">
+
+                    <div class="brand">
+                        <div class="brand-icon">
+                            <i class="bi bi-bus-front-fill"></i>
+                        </div>
+
+                        <div>
+                            <h1>BusOne</h1>
+                            <p>Smart Workforce & Operations</p>
+                        </div>
+                    </div>
+
+                    <div class="welcome-text">
+                        <h2>Move Smarter.<br>Manage Better.</h2>
+
+                        <p>
+                            A smart platform for managing buses,
+                            routes, workforce, passengers and operations
+                            from one place.
+                        </p>
+                    </div>
+
+                    <div class="features">
+
+                        <div class="feature">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Live Bus Tracking</span>
+                        </div>
+
+                        <div class="feature">
+                            <i class="bi bi-people-fill"></i>
+                            <span>Workforce Management</span>
+                        </div>
+
+                        <div class="feature">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <span>Reports & Analytics</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="login-right">
+
+                <div class="login-box">
+
+                    <!-- Logo -->
+                    <div class="mobile-logo">
+                        <div class="brand-icon">
+                            <i class="bi bi-bus-front-fill"></i>
+                        </div>
+
+                        <h2>BusOne</h2>
+                    </div>
+
+
+                    <div class="login-heading">
+                        <h2>Welcome Back</h2>
+                        <p>Login to continue to BusOne</p>
+                    </div>
+
+
+                    <!-- Login Form -->
+                    <form id="loginForm">
+
+                        <!-- Role -->
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Login As
+                            </label>
+
+                            <div class="role-options">
+
+                                <label class="role-card active">
+                                    <input type="radio" name="role" value="admin" checked>
+
+                                    <i class="bi bi-person-badge-fill"></i>
+
+                                    <span>Admin</span>
+                                </label>
+
+
+                                <label class="role-card">
+                                    <input type="radio" name="role" value="driver">
+
+                                    <i class="bi bi-person-vcard-fill"></i>
+
+                                    <span>Driver</span>
+                                </label>
+
+
+                                <label class="role-card">
+                                    <input type="radio" name="role" value="passenger">
+
+                                    <i class="bi bi-person-fill"></i>
+
+                                    <span>Passenger</span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Username -->
+                        <div class="mb-3">
+
+                            <label for="username" class="form-label">
+                                Username / Email
+                            </label>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    <i class="bi bi-person"></i>
+                                </span>
+
+                                <input type="text" class="form-control" id="username"
+                                    placeholder="Enter username or email">
+
+                            </div>
+
+                            <small class="error-message" id="usernameError"></small>
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="mb-3">
+
+                            <label for="password" class="form-label">
+                                Password
+                            </label>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+
+                                <input type="password" class="form-control" id="password" placeholder="Enter password">
+
+                                <button type="button" class="btn password-btn" id="togglePassword">
+                                    <i class="bi bi-eye" id="eyeIcon"></i>
+                                </button>
+
+                            </div>
+
+                            <small class="error-message" id="passwordError"></small>
+
+                        </div>
+
+
+                        <!-- Remember / Forgot -->
+                        <div class="login-options">
+
+                            <div class="form-check">
+
+                                <input class="form-check-input" type="checkbox" id="remember">
+
+                                <label class="form-check-label" for="remember">
+                                    Remember me
+                                </label>
+
+                            </div>
+
+                            <a href="#" id="forgotPassword">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <!-- Login Button -->
+                        <button type="submit" class="btn login-btn">
+                            <span>Login</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                        <!-- Sign Up Button -->
+                        <div class="signup-section">
+                            <p>Don't have an account?</p>
+
+                            <button type="button" class="btn signup-btn" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
+                                <i class="bi bi-person-plus"></i>
+                                Create Account
+                            </button>
+                        </div>
+                        
+                        <!-- Demo Credentials -->
+                        <div class="demo-info">
+
+                            <i class="bi bi-info-circle"></i>
+
+                            <div>
+                                <strong>Demo Login</strong>
+                                <br>
+                                Username: admin
+                                <br>
+                                Password: admin123
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                    <div class="login-footer">
+                        <p>
+                            © 2026 BusOne. Smart Transportation Management.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- =========================
+     SIGN UP MODAL
+========================= -->
+
+<div
+    class="modal fade"
+    id="signupModal"
+    tabindex="-1"
+    aria-labelledby="signupModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content signup-modal">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="signupModalLabel">
+                        Create BusOne Account
+                    </h5>
+
+                    <p class="signup-subtitle">
+                        Register to access BusOne
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <form id="signupForm">
+
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label for="signupName" class="form-label">
+                            Full Name
+                        </label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="signupName"
+                                placeholder="Enter your full name"
+                            >
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="signupNameError"
+                        ></small>
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">
+                            Email Address
+                        </label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="signupEmail"
+                                placeholder="Enter your email"
+                            >
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="signupEmailError"
+                        ></small>
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="mb-3">
+                        <label for="signupRole" class="form-label">
+                            Register As
+                        </label>
+
+                        <select
+                            class="form-select signup-select"
+                            id="signupRole"
+                        >
+                            <option value="passenger">Passenger</option>
+                            <option value="driver">Driver</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">
+                            Password
+                        </label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-lock"></i>
+                            </span>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="signupPassword"
+                                placeholder="Create a password"
+                            >
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="signupPasswordError"
+                        ></small>
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-shield-lock"></i>
+                            </span>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                            >
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="confirmPasswordError"
+                        ></small>
+                    </div>
+
+
+                    <!-- Signup Button -->
+                    <button
+                        type="submit"
+                        class="btn signup-submit-btn"
+                    >
+                        <i class="bi bi-person-plus"></i>
+                        Create Account
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

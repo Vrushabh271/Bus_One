@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BusOne - Drivers</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+body{background:#f4f7fb;font-family:"Segoe UI",Arial,sans-serif;color:#172b4d}
+.sidebar{min-height:100vh;background:linear-gradient(180deg,#071b33,#0b3154)}
+.brand{font-size:24px;font-weight:700;color:#fff}
+.brand i{color:#4da3ff}
+.sidebar .nav-link{color:#cbd5e1;padding:11px 14px;border-radius:10px;margin-bottom:5px}
+.sidebar .nav-link:hover,.sidebar .nav-link.active{background:rgba(255,255,255,.12);color:#fff}
+.sidebar .nav-link i{width:25px;margin-right:8px}
+.topbar{background:#fff;border-bottom:1px solid #e5e7eb}
+.cardx{border:0;border-radius:18px;box-shadow:0 7px 24px rgba(15,23,42,.06)}
+.stat-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:23px}
+.hero{background:linear-gradient(135deg,#0d6efd,#1553a6);color:#fff;border-radius:20px;padding:28px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.09);right:-50px;top:-60px}
+.table-card{border:0;border-radius:18px;box-shadow:0 7px 24px rgba(15,23,42,.06);overflow:hidden}
+.profile{width:40px;height:40px;border-radius:50%;background:#0d6efd;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+@media(max-width:768px){.sidebar{min-height:auto}}
+</style>
+</head>
+<body>
+<div class="container-fluid"><div class="row">
+<aside class="col-lg-2 col-md-3 p-3 sidebar">
+<div class="brand mb-4"><i class="bi bi-bus-front-fill"></i> BusOne</div>
+<small class="text-secondary text-uppercase">Main Menu</small>
+<nav class="nav flex-column mt-3"><a href="admin-dashboard.html" class="nav-link "><i class="bi bi-grid-fill"></i>Dashboard</a><a href="buses.html" class="nav-link "><i class="bi bi-bus-front"></i>Buses</a><a href="drivers.html" class="nav-link active"><i class="bi bi-person-badge"></i>Drivers</a><a href="passengers.html" class="nav-link "><i class="bi bi-people"></i>Passengers</a><a href="passes.html" class="nav-link "><i class="bi bi-ticket-perforated"></i>Bus Passes</a><a href="attendance.html" class="nav-link "><i class="bi bi-calendar-check"></i>Attendance</a><a href="payments.html" class="nav-link "><i class="bi bi-credit-card"></i>Payments</a><a href="notifications.html" class="nav-link "><i class="bi bi-bell"></i>Notifications</a></nav>
+<hr class="border-secondary">
+<a href="index.html" class="btn btn-outline-light w-100"><i class="bi bi-box-arrow-right"></i> Logout</a>
+</aside>
+<main class="col-lg-10 col-md-9 p-0">
+<div class="topbar px-4 py-3 d-flex justify-content-between align-items-center">
+<div><h5 class="mb-0">Drivers</h5><small class="text-muted">Manage BusOne drivers and workforce</small></div>
+<div class="d-flex align-items-center gap-3"><button class="btn btn-light position-relative"><i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span></button><div class="profile">A</div></div>
+</div>
+<div class="p-4">
+<div class="hero mb-4"><div class="position-relative z-1"><span class="badge bg-light text-primary mb-2">Workforce</span><h2 class="fw-bold">Driver Management</h2><p class="mb-0 opacity-75">Manage drivers, assignments and availability from one place.</p></div></div>
+<div class="d-flex justify-content-between align-items-center mb-3"><h4 class="fw-bold mb-0">Drivers</h4><button class="btn btn-primary"><i class="bi bi-person-plus"></i> Add Driver</button></div>
+<div class="row g-4">
+<div class="col-xl-4 col-md-6"><div class="card cardx p-4 h-100"><div class="d-flex justify-content-between"><div class="stat-icon bg-success-subtle text-success"><i class="bi bi-person-badge-fill"></i></div><span class="badge text-bg-success">Available</span></div><h5 class="mt-3 mb-1">Rajesh Patil</h5><p class="text-muted mb-3">Driver ID: DR-1001</p><div class="small text-muted">Assigned Bus</div><div class="fw-semibold">MH-16-2002</div><hr><div class="d-flex justify-content-between"><span>Experience</span><strong>6 years</strong></div></div></div>
+<div class="col-xl-4 col-md-6"><div class="card cardx p-4 h-100"><div class="d-flex justify-content-between"><div class="stat-icon bg-primary-subtle text-primary"><i class="bi bi-person-badge-fill"></i></div><span class="badge text-bg-primary">On Duty</span></div><h5 class="mt-3 mb-1">Sanjay Jadhav</h5><p class="text-muted mb-3">Driver ID: DR-1002</p><div class="small text-muted">Assigned Bus</div><div class="fw-semibold">MH-16-2045</div><hr><div class="d-flex justify-content-between"><span>Experience</span><strong>9 years</strong></div></div></div>
+<div class="col-xl-4 col-md-6"><div class="card cardx p-4 h-100"><div class="d-flex justify-content-between"><div class="stat-icon bg-warning-subtle text-warning"><i class="bi bi-person-badge-fill"></i></div><span class="badge text-bg-warning">Off Duty</span></div><h5 class="mt-3 mb-1">Amit Shinde</h5><p class="text-muted mb-3">Driver ID: DR-1003</p><div class="small text-muted">Assigned Bus</div><div class="fw-semibold">Not Assigned</div><hr><div class="d-flex justify-content-between"><span>Experience</span><strong>3 years</strong></div></div></div>
+</div></div>
+</main></div></div>
+</body></html>
